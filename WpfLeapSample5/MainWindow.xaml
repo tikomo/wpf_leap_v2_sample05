@@ -1,0 +1,20 @@
+﻿<Window x:Class="WpfLeapSample5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Width="1920" Height="1080" WindowStartupLocation="Manual" WindowState="Maximized">
+    <Grid>
+        <Canvas>
+            <Canvas x:Name="ShowArea" Width="1920" Height="1080">
+                <Button x:Name="redButton" Content="赤" Height="80" Canvas.Left="59" Canvas.Top="49" Width="131" FontSize="36" FontWeight="Bold" Foreground="Red" Click="redButton_Click"/>
+                <Button x:Name="blueButton" Content="青" Height="80" Canvas.Left="212" Canvas.Top="49" Width="131" FontSize="36" FontWeight="Bold" Foreground="Blue" Click="blueButton_Click"/>
+                <Button x:Name="greenButton" Content="緑" Height="80" Canvas.Left="368" Canvas.Top="49" Width="131" FontSize="36" FontWeight="Bold" Foreground="Green" Click="greenButton_Click"/>
+                <Button x:Name="yellowButton" Content="黄" Height="80" Canvas.Left="525" Canvas.Top="49" Width="131" FontSize="36" FontWeight="Bold" Foreground="Yellow" Click="yellowButton_Click"/>
+                <Button x:Name="blackButton" Content="黒" Height="80" Canvas.Left="677" Canvas.Top="49" Width="131" FontSize="36" FontWeight="Bold" Foreground="Black" Click="blackButton_Click"/>
+
+            </Canvas>
+            <TextBlock x:Name="TextBlock1" Height="63" Canvas.Left="284" TextWrapping="Wrap" Canvas.Top="341" Width="885" FontSize="48" FontWeight="Bold"/>
+            <InkPresenter Name="paintCanvas"/>
+
+        </Canvas>
+    </Grid>
+</Window>
